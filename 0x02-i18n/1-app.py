@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 """Babel setup"""
 
-
 from flask import Flask, render_template
 from flask_babel import Babel
-
 
 app = Flask(__name__)
 babel = Babel(app)
@@ -28,6 +26,3 @@ def index():
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001)
-    
-
-
